@@ -1,0 +1,47 @@
+body{
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+}
+div{
+	color: $color-principal;
+	p{
+		font-size: 2rem;
+	}
+}
+.contenedor p{
+	color: $color-principal;
+	@media all and (min-width: 768px){
+		color: black;	
+	}
+}
+.container-xl{
+	width: 100%;
+	max-width: 1140px;
+	margin: auto;
+	p{
+		color:$color-principal;
+		font-size: 1rem;
+		padding: .75rem;
+		@media all and (min-width: 768px){
+			color: red;
+		}
+		@media all and (min-width: 960px){
+			color: green;	
+		}
+		&:hover{
+			color: purple;
+		}
+		.bold{
+			font-weight: bold;
+		}
+		&.color{
+			color: #444444;
+			span{
+				color: yellow;
+			}
+		}
+		&::before{
+			content: '--';
+		}
+	}
+}

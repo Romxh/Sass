@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap");
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+}
+
+div {
+  color: #E6E6FA;
+}
+
+div p {
+  font-size: 2rem;
+}
+
+.contenedor p {
+  color: #E6E6FA;
+}
+
+@media all and (min-width: 768px) {
+  .contenedor p {
+    color: black;
+  }
+}
+
+.container-xl {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.container-xl p {
+  color: #E6E6FA;
+  font-size: 1rem;
+  padding: .75rem;
+}
+
+@media all and (min-width: 768px) {
+  .container-xl p {
+    color: red;
+  }
+}
+
+@media all and (min-width: 960px) {
+  .container-xl p {
+    color: green;
+  }
+}
+
+.container-xl p:hover {
+  color: purple;
+}
+
+.container-xl p .bold {
+  font-weight: bold;
+}
+
+.container-xl p.color {
+  color: #444444;
+}
+
+.container-xl p.color span {
+  color: yellow;
+}
+
+.container-xl p::before {
+  content: '--';
+}
